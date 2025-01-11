@@ -40,8 +40,8 @@ function Projects() {
   ];
 
   return (
-    <div className='min-h-screen flex flex-col'>
-      <div className='px-[5%] pt-2 lg:px-[10%] lg:pt-5 flex-grow'>
+    <div className='min-h-screen flex flex-col px-[5%] pt-2 lg:px-[10%] lg:pt-5'>
+      <div className='flex-grow'>
         <NavMenu />
         <div className='mt-12 flex flex-col justify-center items-center '>
           <h1 className='text-3xl text-center font-bold uppercase'>Projects</h1>
