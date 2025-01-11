@@ -1,12 +1,12 @@
+import Footer from '@/components/custom/footer';
 import NavMenu from '@/components/custom/nav-menu';
 import { Button } from '@/components/ui/button';
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
-    <React.Fragment>
-      <div className='px-[5%] pt-2 lg:px-[10%] lg:pt-5'>
+    <div className='min-h-screen flex flex-col px-[5%] pt-2 lg:px-[10%] lg:pt-5 '>
+      <div className='flex-grow'>
         <NavMenu />
         <div className='h-[60vh] w-full flex flex-row justify-between items-center'>
           <div className='flex flex-col justify-center'>
@@ -31,7 +31,8 @@ function HomePage() {
           </div>
         </div>
       </div>
-    </React.Fragment>
+      <Footer />
+    </div>
   );
 }
 

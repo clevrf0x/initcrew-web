@@ -1,6 +1,7 @@
 import { Separator } from '../components/ui/separator';
 import ProjectCard, { ProjectStatus } from '../components/custom/project-card';
 import NavMenu from '@/components/custom/nav-menu';
+import Footer from '@/components/custom/footer';
 
 function Projects() {
   const projects = [
@@ -39,17 +40,20 @@ function Projects() {
   ];
 
   return (
-    <div className='px-[5%] pt-2 lg:px-[10%] lg:pt-5'>
-      <NavMenu />
-      <div className='mt-12 flex flex-col justify-center items-center '>
-        <h1 className='text-3xl text-center font-bold uppercase'>Projects</h1>
-        <Separator className='my-2 mb-10 w-[100px] bg-gray-500' />
-        <div className='mb-10 grid grid-cols-1 gap-6 lg:grid-cols-2'>
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
+    <div className='min-h-screen flex flex-col'>
+      <div className='px-[5%] pt-2 lg:px-[10%] lg:pt-5 flex-grow'>
+        <NavMenu />
+        <div className='mt-12 flex flex-col justify-center items-center '>
+          <h1 className='text-3xl text-center font-bold uppercase'>Projects</h1>
+          <Separator className='my-2 mb-10 w-[100px] bg-gray-500' />
+          <div className='mb-10 grid grid-cols-1 gap-6 lg:grid-cols-2'>
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
