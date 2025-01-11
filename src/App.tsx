@@ -1,11 +1,24 @@
 import React from 'react';
-// import { ModeToggle } from './components/mode-toggle';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NotFound from './pages/404';
+import Unauthorized from './pages/401';
+import HomePage from './pages/home';
 
 function App() {
   return (
     <React.Fragment>
-      {/*  */}
-      {/* <ModeToggle /> */}
+      <Router>
+        <div>
+          <Routes>
+            {/* Public Routes */}
+            <Route path='/' element={<HomePage />} />
+            <Route path='/unauthorized' element={<Unauthorized />} />
+
+            {/* 404 Route */}
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </div>
+      </Router>
     </React.Fragment>
   );
 }
