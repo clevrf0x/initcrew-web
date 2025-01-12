@@ -123,7 +123,7 @@ function Events() {
           <div className='py-[3vh]'>
             {/* TODO: Onclick scroll to bottom */}
             <ChevronsDown
-              onClick={() => console.log('scroll 100vh')}
+              // onClick={() => console.log('scroll 100vh')}
               className='animate-bounce hover:cursor-pointer'
               size={48}
             />

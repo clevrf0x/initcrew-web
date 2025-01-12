@@ -19,7 +19,7 @@ function HomePage() {
             </p>
             <div className='mt-6 flex flex-row'>
               <Button className='me-4 px-8 py-5 font-semibold' variant='destructive'>
-                <Link to='/team'>Meet Team</Link>
+                <Link to='/about'>About Us</Link>
               </Button>
               <Button className='px-8 py-5 font-semibold' variant='outline'>
                 <Link to='/blogs'>Blogs</Link>
