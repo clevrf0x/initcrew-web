@@ -14,6 +14,12 @@ function Events() {
       imageUrl: '/images/events/initcon.webp',
     },
     {
+      title: 'InitX',
+      description:
+        'Conducted at Banglore and Kochi, InitX is a series of cybersecurity workshops and training sessions sponsored by industry leaders like Juspay and had panel from companies like Juspay, PayU and Groww.',
+      imageUrl: '/images/events/initx.webp',
+    },
+    {
       title: 'Meetup 2022',
       description:
         'Held in October 2022, the Initcrew Meetup was sponsored by Lyminal and E-Hachify, drawing around 100 participants for an engaging and insightful event.',
