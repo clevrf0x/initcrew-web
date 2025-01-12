@@ -19,7 +19,7 @@ function AboutUs() {
     },
     {
       name: 'Ajin Deepak',
-      imageUrl: '/public/images/team/founding_members/ad.webp',
+      imageUrl: '/images/team/founding_members/ad.webp',
       handle: 'ad2001',
       linkedin: 'https://in.linkedin.com/in/ajin-ad2001',
       discord: '',
@@ -30,7 +30,7 @@ function AboutUs() {
     },
     {
       name: 'Abhiram V',
-      imageUrl: '/public/images/team/founding_members/abhiram.webp',
+      imageUrl: '/images/team/founding_members/abhiram.webp',
       handle: 'anon-artist',
       linkedin: 'https://www.linkedin.com/in/abhiramvabhi',
       discord: '',
@@ -41,7 +41,7 @@ function AboutUs() {
     },
     {
       name: 'Vimal V',
-      imageUrl: '/public/images/team/founding_members/vimal.webp',
+      imageUrl: '/images/team/founding_members/vimal.webp',
       handle: 'error404',
       linkedin: 'https://www.linkedin.com/in/vimal-varadan',
       discord: '',
@@ -52,7 +52,7 @@ function AboutUs() {
     },
     {
       name: 'Gokul VG',
-      imageUrl: '/public/images/team/founding_members/gokul.webp',
+      imageUrl: '/images/team/founding_members/gokul.webp',
       handle: 'pix',
       linkedin: 'https://www.linkedin.com/in/p1x1e',
       discord: '',
@@ -63,7 +63,7 @@ function AboutUs() {
     },
     {
       name: 'Ananthakrishnan E R',
-      imageUrl: '/public/images/team/founding_members/ak.webp',
+      imageUrl: '/images/team/founding_members/ak.webp',
       handle: 'abn00b',
       linkedin: 'https://www.linkedin.com/in/ananthakrishnaner',
       discord: '',
@@ -74,7 +74,7 @@ function AboutUs() {
     },
     {
       name: 'MUHAMMED SHANAVAS',
-      imageUrl: '/public/images/team/founding_members/shanavas.webp',
+      imageUrl: '/images/team/founding_members/shanavas.webp',
       handle: 'alien_shanu',
       linkedin: 'https://www.linkedin.com/in/alienshanu/',
       discord: 'https://discord.com/users/612080689978015752',
@@ -85,7 +85,7 @@ function AboutUs() {
     },
     {
       name: 'Akash Sebastian',
-      imageUrl: '/public/images/team/founding_members/akash.webp',
+      imageUrl: '/images/team/founding_members/akash.webp',
       handle: 'akashsebastian',
       linkedin: 'https://www.linkedin.com/in/akash-sebastian',
       discord: '',
@@ -96,7 +96,7 @@ function AboutUs() {
     },
     {
       name: 'Sreesankar G Warrier',
-      imageUrl: '/public/images/team/founding_members/sreesankar.webp',
+      imageUrl: '/images/team/founding_members/sreesankar.webp',
       handle: 'sree',
       linkedin: 'https://www.linkedin.com/in/sreesankar-g-warrier',
       discord: '',
@@ -107,7 +107,7 @@ function AboutUs() {
     },
     {
       name: 'Govind Palakkal',
-      imageUrl: '/public/images/team/founding_members/govind.webp',
+      imageUrl: '/images/team/founding_members/govind.webp',
       handle: 'd3lt4',
       linkedin: 'https://www.linkedin.com/in/d3lt4',
       discord: '',
@@ -121,7 +121,7 @@ function AboutUs() {
   const coreTeam = [
     {
       name: 'Mahshooq Zubair',
-      imageUrl: '/public/images/team/core_members/mahshooq.webp',
+      imageUrl: '/images/team/core_members/mahshooq.webp',
       handle: 'mahshooq',
       linkedin: 'https://www.linkedin.com/in/mahshooq/',
       discord: '',
@@ -132,7 +132,7 @@ function AboutUs() {
     },
     {
       name: 'Anugrah SR',
-      imageUrl: '/public/images/team/core_members/anugrah.webp',
+      imageUrl: '/images/team/core_members/anugrah.webp',
       handle: 'anugrahsr',
       linkedin: 'https://www.linkedin.com/in/anugrah-sr/',
       discord: '',
@@ -143,7 +143,7 @@ function AboutUs() {
     },
     {
       name: 'Ansan Binoy',
-      imageUrl: '/public/images/team/core_members/ansan.webp',
+      imageUrl: '/images/team/core_members/ansan.webp',
       handle: 'ansan',
       linkedin: 'https://linkedin.com/in/ansanbinoy',
       discord: '',
@@ -154,7 +154,7 @@ function AboutUs() {
     },
     {
       name: 'Amith',
-      imageUrl: '/public/images/team/core_members/amith.webp',
+      imageUrl: '/images/team/core_members/amith.webp',
       handle: '0x_amith',
       linkedin: 'https://www.linkedin.com/in/amith-c-61160517b',
       discord: '',
@@ -165,7 +165,7 @@ function AboutUs() {
     },
     {
       name: 'Aswin P Thambi',
-      imageUrl: '/public/images/team/core_members/aswin.webp',
+      imageUrl: '/images/team/core_members/aswin.webp',
       handle: 'r0074g3n7',
       linkedin: 'https://www.linkedin.com/in/aswin-thambi-panikulangara',
       discord: '',
@@ -176,7 +176,7 @@ function AboutUs() {
     },
     {
       name: 'Anand Jayaprakash',
-      imageUrl: '/public/images/team/core_members/anand.webp',
+      imageUrl: '/images/team/core_members/anand.webp',
       handle: 'anandjayapraksh',
       linkedin: 'https://www.linkedin.com/in/anand-jayaprakash-/',
       discord: '',
@@ -187,7 +187,7 @@ function AboutUs() {
     },
     {
       name: 'Derin Shyju',
-      imageUrl: '/public/images/team/core_members/derin.webp',
+      imageUrl: '/images/team/core_members/derin.webp',
       handle: '0xspade',
       linkedin: 'https://www.linkedin.com/in/derin-shyju',
       discord: '',
@@ -198,7 +198,7 @@ function AboutUs() {
     },
     {
       name: 'Anuragh KP',
-      imageUrl: '/public/images/team/core_members/anuragh.webp',
+      imageUrl: '/images/team/core_members/anuragh.webp',
       handle: 'anuraghkp',
       linkedin: 'https://www.linkedin.com/in/anuraghkp/',
       discord: '',
@@ -209,7 +209,7 @@ function AboutUs() {
     },
     // {
     //   name: '',
-    //   imageUrl: '/public/images/team/core_members',
+    //   imageUrl: '/images/team/core_members',
     //   handle: '',
     //   linkedin: '',
     //   discord: '',

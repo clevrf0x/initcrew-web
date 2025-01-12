@@ -11,100 +11,100 @@ function Events() {
       title: 'InitCon 2025',
       description:
         'Our first ever cybersecurity conference, InitCon 2025, is scheduled for June 2025. The event will feature workshops, talks, and networking opportunities for cybersecurity enthusiasts.',
-      imageUrl: '/public/images/events/initcon.webp',
+      imageUrl: '/images/events/initcon.webp',
     },
     {
       title: 'Meetup 2022',
       description:
         'Held in October 2022, the Initcrew Meetup was sponsored by Lyminal and E-Hachify, drawing around 100 participants for an engaging and insightful event.',
-      imageUrl: '/public/images/events/meetup.webp',
+      imageUrl: '/images/events/meetup.webp',
     },
     {
       title: 'Boot2Cloud CTF',
       description:
         'Our first onsite CTF event, Boot 2 Cloud Onsite CTF, was part of a larger meetup and saw participation from around 40 cybersecurity enthusiasts.',
-      imageUrl: '/public/images/events/live-ctf.webp',
+      imageUrl: '/images/events/live-ctf.webp',
     },
     {
       title: 'Breakin CTF',
       description:
         'Conducted during the COVID-19 pandemic, Breakin CTF Challenge attracted over 650 participants. The event was proudly sponsored by industry leaders HackerOne, BugCrowd, and HackersEra.',
-      imageUrl: '/public/images/events/break-in.webp',
+      imageUrl: '/images/events/break-in.webp',
     },
     {
       title: 'DISHA Webinar Series',
       description:
         'These virtual cybersecurity workshops and training sessions come in three variants, DISHA Mark I, DISHA Mark II, DISHA Mark III, offering comprehensive and advanced learning opportunities.',
-      imageUrl: '/public/images/events/disha.webp',
+      imageUrl: '/images/events/disha.webp',
     },
     {
       title: 'Onsite Training Sessions',
       description:
         'We have conducted over seven offline training sessions across various colleges in Kerala, delivering hands-on cybersecurity education to students and professionals.',
-      imageUrl: '/public/images/events/training.webp',
+      imageUrl: '/images/events/training.webp',
     },
   ];
 
   const images = [
     {
       id: 1,
-      src: '/public/images/initcrew_gallery/1.webp',
+      src: '/images/initcrew_gallery/1.webp',
     },
     {
       id: 2,
-      src: '/public/images/initcrew_gallery/2.webp',
+      src: '/images/initcrew_gallery/2.webp',
     },
     {
       id: 3,
-      src: '/public/images/initcrew_gallery/3.webp',
+      src: '/images/initcrew_gallery/3.webp',
     },
     {
       id: 4,
-      src: '/public/images/initcrew_gallery/4.webp',
+      src: '/images/initcrew_gallery/4.webp',
     },
     {
       id: 5,
-      src: '/public/images/initcrew_gallery/5.webp',
+      src: '/images/initcrew_gallery/5.webp',
     },
     {
       id: 6,
-      src: '/public/images/initcrew_gallery/6.webp',
+      src: '/images/initcrew_gallery/6.webp',
     },
     {
       id: 7,
-      src: '/public/images/initcrew_gallery/7.webp',
+      src: '/images/initcrew_gallery/7.webp',
     },
     {
       id: 8,
-      src: '/public/images/initcrew_gallery/8.webp',
+      src: '/images/initcrew_gallery/8.webp',
     },
     {
       id: 9,
-      src: '/public/images/initcrew_gallery/9.webp',
+      src: '/images/initcrew_gallery/9.webp',
     },
     {
       id: 10,
-      src: '/public/images/initcrew_gallery/10.webp',
+      src: '/images/initcrew_gallery/10.webp',
     },
     {
       id: 11,
-      src: '/public/images/initcrew_gallery/11.webp',
+      src: '/images/initcrew_gallery/11.webp',
     },
     {
       id: 12,
-      src: '/public/images/initcrew_gallery/12.webp',
+      src: '/images/initcrew_gallery/12.webp',
     },
     {
       id: 13,
-      src: '/public/images/initcrew_gallery/13.webp',
+      src: '/images/initcrew_gallery/13.webp',
     },
     {
       id: 14,
-      src: '/public/images/initcrew_gallery/14.webp',
+      src: '/images/initcrew_gallery/14.webp',
     },
     {
       id: 15,
-      src: '/public/images/initcrew_gallery/15.webp',
+      src: '/images/initcrew_gallery/15.webp',
     },
   ];
 
