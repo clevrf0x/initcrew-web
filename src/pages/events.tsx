@@ -7,12 +7,12 @@ import { ChevronsDown } from 'lucide-react';
 
 function Events() {
   const events = [
-    {
-      title: 'InitCon 2025',
-      description:
-        'Our first ever cybersecurity conference, InitCon 2025, is scheduled for June 2025. The event will feature workshops, talks, and networking opportunities for cybersecurity enthusiasts.',
-      imageUrl: '/images/events/initcon.webp',
-    },
+    // {
+    //   title: 'InitCon 2025',
+    //   description:
+    //     'Our first ever cybersecurity conference, InitCon 2025, is scheduled for June 2025. The event will feature workshops, talks, and networking opportunities for cybersecurity enthusiasts.',
+    //   imageUrl: '/images/events/initcon.webp',
+    // },
     {
       title: 'InitX',
       description:
