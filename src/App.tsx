@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import NotFound from './pages/404';
 import Unauthorized from './pages/401';
 import HomePage from './pages/home';
@@ -30,6 +32,8 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Analytics />
+      <SpeedInsights />
     </React.Fragment>
   );
 }
