@@ -9,6 +9,7 @@ import Projects from './pages/projects';
 import Events from './pages/events';
 import WorkInProgress from './pages/work-in-progress';
 import AboutUs from './pages/about';
+import BlogList from './pages/blog';
 import JuicyBarBruteforceBlog from './pages/blogs/juicy-bar-bruteforce';
 
 function App() {
@@ -22,11 +23,14 @@ function App() {
             <Route path='/projects' element={<Projects />} />
             <Route path='/events' element={<Events />} />
             <Route path='/about' element={<AboutUs />} />
-            <Route path='/blogs' element={<WorkInProgress />} />
+            <Route path='/blogs' element={<BlogList />} />
             <Route path='/initcon' element={<WorkInProgress />} />
             <Route path='/shop' element={<WorkInProgress />} />
             <Route path='/contact' element={<WorkInProgress />} />
             <Route path='/unauthorized' element={<Unauthorized />} />
+
+            {/* Blogs Routes */}
+            <Route path='/blogs/juicy-bar-bruteforce' element={<JuicyBarBruteforceBlog />} />
 
             {/* 404 Route */}
             <Route path='*' element={<NotFound />} />
