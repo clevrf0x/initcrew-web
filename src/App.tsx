@@ -8,7 +8,8 @@ import HomePage from './pages/home';
 import Projects from './pages/projects';
 import Events from './pages/events';
 import WorkInProgress from './pages/work-in-progress';
-import AboutUs from './pages/team';
+import AboutUs from './pages/about';
+import JuicyBarBruteforceBlog from './pages/blogs/juicy-bar-bruteforce';
 
 function App() {
   return (
