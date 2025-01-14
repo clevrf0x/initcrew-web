@@ -22,6 +22,18 @@ function BlogList() {
               onReadMore={() => console.log('Navigating to blog post...')}
             /> */}
             <BlogCard
+              title='Kerala Police Youtube Takeover Incident Analysis'
+              authors={[
+                { name: 'Akash Sebastian', avatar: '/images/authors/akash-profile.webp' },
+                { name: 'Nashid P' },
+                { name: '5P34R' },
+              ]}
+              publishedDate={new Date('2023-01-18')}
+              description={`In this blog, we analyze the high-profile hacking incident of the Kerala Police YouTube channel on January 17, 2023. The hackers uploaded malicious videos promoting cracked software and embedded malware-laden links, tricking unsuspecting viewers.
+                            The blog delves into the behavior of the malware, from its initial network requests via Telegram to its data exfiltration to a Command and Control (C2) server, followed by a self-destructive cleanup process. By reverse engineering the attack, the blog identifies the malware as Vidar, a notorious information stealer.`}
+              onReadMore={() => navigate('/blogs/kerala-police-youtube-takeover')}
+            />
+            <BlogCard
               title='Android CTF Juicy Bar::Bruteforce'
               authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
               publishedDate={new Date('2024-04-21')}

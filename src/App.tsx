@@ -9,8 +9,9 @@ import Projects from './pages/projects';
 import Events from './pages/events';
 import WorkInProgress from './pages/work-in-progress';
 import AboutUs from './pages/about';
-import BlogList from './pages/blog';
+import BlogList from './pages/blog-list';
 import JuicyBarBruteforceBlog from './pages/blogs/juicy-bar-bruteforce';
+import KeralaPoliceYoutubeHackBlog from './pages/blogs/kerala-police-youtube-takeover';
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
 
             {/* Blogs Routes */}
             <Route path='/blogs/juicy-bar-bruteforce' element={<JuicyBarBruteforceBlog />} />
+            <Route
+              path='/blogs/kerala-police-youtube-takeover'
+              element={<KeralaPoliceYoutubeHackBlog />}
+            />
 
             {/* 404 Route */}
             <Route path='*' element={<NotFound />} />

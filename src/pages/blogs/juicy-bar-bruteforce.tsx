@@ -6,13 +6,8 @@ export default function JuicyBarBruteforceBlog() {
   const frontmatter = {
     title: 'Android CTF Juicy Bar::Bruteforce',
     date: '2024-04-21',
-    lastmod: '2024-04-21',
     tags: ['Android Security', 'Juicy Bar', 'Reverse Engineering', 'Writeup', 'Frida'],
-    draft: false,
-    summary: 'This article is a write-up of the Bruteforce challenge in the Android CTF Juicy Bar.',
-    images: ['/images/canada/mountains.jpg', '/images/canada/toronto.jpg'],
     authors: ['Ajin Deepak'],
-    layout: 'PostLayout',
     canonicalUrl: 'https://ad2001.com/blog/juicy-bar-bruteforce',
   };
 

@@ -62,7 +62,19 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ language, children }) => {
           )}
         </button>
       </div>
-      <div className='overflow-x-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-primary scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-primary-hover scrollbar-track-primary-hover'>
+      <div
+        className='overflow-x-auto'
+        style={{
+          msOverflowStyle: 'none', // IE 10+
+          scrollbarWidth: 'none', // Firefox
+        }}>
+        <style>
+          {`
+      div::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+    `}
+        </style>
         <SyntaxHighlighter
           language={language}
           style={oneDark}
@@ -102,7 +114,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
         {children}
       </h3>
     ),
-    p: ({ children }) => <p className='leading-7 [&:not(:first-child)]:mt-4'>{children}</p>,
+    p: ({ children }) => <p className='leading-7 [&:not(:first-child)]:mt-6'>{children}</p>,
     a: ({ href, children }) => (
       <a
         href={href}
@@ -113,7 +125,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
       </a>
     ),
     img: ({ src, alt }) => (
-      <div className='my-6'>
+      <div className='w-full flex items-center justify-center my-6'>
         <img src={src} alt={alt} className='rounded-lg border shadow-sm' loading='lazy' />
       </div>
     ),
@@ -150,14 +162,14 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
 
   return (
     <>
-      <Card className='max-w-6xl mx-auto my-6 border-none'>
+      <Card className='max-w-4xl mx-auto my-6'>
         <CardHeader>
           <CardTitle className='text-4xl text-center'>{frontmatter.title}</CardTitle>
           <CardDescription>
             <div className='flex flex-col gap-2'>
               <div className='flex flex-col lg:flex-row items-center gap-2 justify-center font-semibold my-2'>
                 <span className='text-sm text-muted-foreground'>
-                  {frontmatter.authors.join(',')}
+                  {frontmatter.authors.join(', ')}
                 </span>
                 <Separator className='w-[50px] h-[5px] bg-gray-500' />
                 <span className='text-sm text-muted-foreground'>
