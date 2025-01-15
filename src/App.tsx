@@ -12,6 +12,7 @@ import AboutUs from './pages/about';
 import BlogList from './pages/blog-list';
 import JuicyBarBruteforceBlog from './pages/blogs/juicy-bar-bruteforce';
 import KeralaPoliceYoutubeHackBlog from './pages/blogs/kerala-police-youtube-takeover';
+import FridaTracingAndPatchingBlog from './pages/blogs/frida-tracing-and-patching';
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
             <Route
               path='/blogs/kerala-police-youtube-takeover'
               element={<KeralaPoliceYoutubeHackBlog />}
+            />
+            <Route
+              path='/blogs/frida-tracing-and-patching'
+              element={<FridaTracingAndPatchingBlog />}
             />
 
             {/* 404 Route */}

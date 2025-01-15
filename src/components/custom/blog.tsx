@@ -114,11 +114,20 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
         {children}
       </h3>
     ),
-    p: ({ children }) => <p className='leading-7 [&:not(:first-child)]:mt-6'>{children}</p>,
+    h4: ({ children }) => (
+      <h4
+        className='scroll-m-20 text-xl font-semibold tracking-tight mt-6 mb-2'
+        id={children?.toString().toLowerCase().replace(/\s+/g, '-')}>
+        {children}
+      </h4>
+    ),
+    p: ({ children }) => (
+      <p className='leading-7 [&:not(:first-child)]:mt-6 break-words'>{children}</p>
+    ),
     a: ({ href, children }) => (
       <a
         href={href}
-        className='font-medium text-primary underline underline-offset-4 hover:text-primary/80 transition-colors'
+        className='font-medium text-primary underline underline-offset-4 hover:text-primary/80 transition-colors break-all'
         target='_blank'
         rel='noopener noreferrer'>
         {children}
@@ -132,18 +141,23 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     code: ({ node, inline, className, children, ...props }) => {
       const match = /language-(\w+)/.exec(className || '');
-      const language = match ? match[1] : '';
 
-      if (inline) {
+      if (inline || !match) {
         return (
-          <code className='rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm'>
+          <code
+            className='rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm break-words'
+            {...props}>
             {children}
           </code>
         );
       }
 
+      const language = match[1];
       return <CodeBlock language={language}>{String(children).replace(/\n$/, '')}</CodeBlock>;
     },
+    inlineCode: ({ children }) => (
+      <code className='rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm'>{children}</code>
+    ),
     blockquote: ({ children }) => (
       <blockquote className='mt-6 border-l-2 pl-6 italic'>{children}</blockquote>
     ),
@@ -156,6 +170,13 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
       <th className='border bg-muted px-4 py-2 text-left font-medium'>{children}</th>
     ),
     td: ({ children }) => <td className='border px-4 py-2'>{children}</td>,
+    ul: ({ children }) => (
+      <ul className='my-6 list-disc list-outside space-y-2 pl-6'>{children}</ul>
+    ),
+    ol: ({ children }) => (
+      <ol className='my-6 list-decimal list-outside space-y-2 pl-6'>{children}</ol>
+    ),
+    li: ({ children }) => <li className='leading-7'>{children}</li>,
   };
 
   const markdownContent = content.trim();
@@ -189,12 +210,42 @@ const BlogPost: React.FC<BlogPostProps> = ({ frontmatter, content }) => {
 
         <Separator className='mb-6' />
 
-        <CardContent>
+        <CardContent className='overflow-hidden'>
+          <style>
+            {`
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .hide-scrollbar::-webkit-scrollbar {
+              display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .hide-scrollbar {
+              -ms-overflow-style: none;  /* IE and Edge */
+              scrollbar-width: none;  /* Firefox */
+            }
+
+            /* Apply to all potentially scrollable elements within ReactMarkdown */
+            .markdown-content pre,
+            .markdown-content code,
+            .markdown-content table,
+            .markdown-content div {
+              scrollbar-width: none;
+              -ms-overflow-style: none;
+            }
+
+            .markdown-content pre::-webkit-scrollbar,
+            .markdown-content code::-webkit-scrollbar,
+            .markdown-content table::-webkit-scrollbar,
+            .markdown-content div::-webkit-scrollbar {
+              display: none;
+            }
+          `}
+          </style>
           <ReactMarkdown
             components={components}
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeRaw, rehypeKatex, rehypeSlug]}
-            className='prose prose-slate max-w-none dark:prose-invert'>
+            className='prose prose-slate max-w-none dark:prose-invert prose-code:px-0 prose-code:py-0 prose-code:font-normal prose-a:break-all markdown-content'>
             {markdownContent}
           </ReactMarkdown>
         </CardContent>

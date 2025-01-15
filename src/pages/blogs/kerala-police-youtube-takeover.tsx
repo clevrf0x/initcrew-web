@@ -74,7 +74,7 @@ export default function KeralaPoliceYoutubeHackBlog() {
 
   and response contains :
 
-  ~~~
+  ~~~powershell
   d8 1,1,1,1,1,cc332423b30ba3c7a578f3d40d62c006,1,0,1,1,0,Default;%DOCUMENTS%\\;*.txt;50;true;movies:music:mp3:exe;recent;%RECENT%\\;*.txt;50;false;movies:music:mp3:exe;desktop;%DESKTOP%\\;*.txt;50;true;movies:music:mp3:exe; 0
   ~~~
   It is used for finding files with sensitive content.

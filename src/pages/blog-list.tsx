@@ -34,6 +34,23 @@ function BlogList() {
               onReadMore={() => navigate('/blogs/kerala-police-youtube-takeover')}
             />
             <BlogCard
+              title='From Tracing to Patching using Frida'
+              authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
+              publishedDate={new Date('2024-04-21')}
+              description={`Learn how to leverage Frida's powerful tracing capabilities to reverse engineer and modify Android applications, demonstrated through a case study with Mini Militia Classic. This article explores tracing, disassembly, and live instrumentation to achieve hacks like unlimited bullets and jetpack fuel.`}
+              onReadMore={() => navigate('/blogs/frida-tracing-and-patching')}
+            />
+            <BlogCard
+              title={`A Noob's Guide to ARM Exploitation: Learn, Practice, Master`}
+              authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
+              publishedDate={new Date('2024-10-27')}
+              description={`Embark on a journey into the fascinating world of ARM exploitation with Ajin Deepak, a passionate security researcher from mobilehackinglabs. This beginner-friendly guide compiles practical insights and hands-on writeups covering topics like stack buffer overflows, ROP chains, heap exploitation, ARM64 techniques, and more.
+                            With a focus on clarity and accessibility, this book is perfect for anyone with a background in computer science, a grasp of C programming, and an interest in low-level exploitation. Whether you're new to ARM or want to refine your skills, this ever-evolving resource offers valuable guidance to help you grow.`}
+              onReadMore={() =>
+                window.open('https://ad2001.gitbook.io/a-noobs-guide-to-arm-exploitation')
+              }
+            />
+            <BlogCard
               title='Android CTF Juicy Bar::Bruteforce'
               authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
               publishedDate={new Date('2024-04-21')}
