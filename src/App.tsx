@@ -13,6 +13,8 @@ import BlogList from './pages/blog-list';
 import JuicyBarBruteforceBlog from './pages/blogs/juicy-bar-bruteforce';
 import KeralaPoliceYoutubeHackBlog from './pages/blogs/kerala-police-youtube-takeover';
 import FridaTracingAndPatchingBlog from './pages/blogs/frida-tracing-and-patching';
+import JuicyBarMeetFridaBlog from './pages/blogs/juicy-bar-meet-frida';
+import AndroidSecurityExportedBroadcastReciever from './pages/blogs/android-security-exported-broadcast-reciever';
 
 function App() {
   return (
@@ -40,6 +42,11 @@ function App() {
             <Route
               path='/blogs/frida-tracing-and-patching'
               element={<FridaTracingAndPatchingBlog />}
+            />
+            <Route path='/blogs/juicy-bar-meet-frida' element={<JuicyBarMeetFridaBlog />} />
+            <Route
+              path='/blogs/android-security-exported-broadcast-reciever'
+              element={<AndroidSecurityExportedBroadcastReciever />}
             />
 
             {/* 404 Route */}

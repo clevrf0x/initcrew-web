@@ -51,11 +51,25 @@ function BlogList() {
               }
             />
             <BlogCard
+              title='Android Security::Exported Broadcast Receiver'
+              authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
+              publishedDate={new Date('2024-03-31')}
+              description={`This article provides an in-depth examination of exported broadcast receivers in Android, showcasing their functionality, potential vulnerabilities, and methods of exploitation. Through illustrative examples, such as creating, identifying, and testing exported receivers, it highlights the risks of insecure implementation, including command injection. The hands-on approach includes crafting exploit scenarios, testing with ADB, and achieving code execution. This tutorial is ideal for developers and security enthusiasts aiming to enhance their understanding of Android security and identify risks associated with exported broadcast receivers.`}
+              onReadMore={() => navigate('/blogs/android-security-exported-broadcast-reciever')}
+            />
+            <BlogCard
               title='Android CTF Juicy Bar::Bruteforce'
               authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
               publishedDate={new Date('2024-04-21')}
               description={`Dive into the exciting world of Android CTF challenges with this detailed walkthrough of the Juicy Bar brute force level. In this post, Ajin Deepak guides you through identifying the validation method, crafting a Frida script, and brute-forcing a 4-digit PIN to uncover the flag. Whether you're a beginner or a seasoned reverse engineer, you'll find actionable insights, helpful tools, and links to deepen your Android security knowledge.`}
               onReadMore={() => navigate('/blogs/juicy-bar-bruteforce')}
+            />
+            <BlogCard
+              title='Android CTF Juicy Bar::Meet Frida'
+              authors={[{ name: 'Ajin Deepak', avatar: '/images/authors/ad-profile.webp' }]}
+              publishedDate={new Date('2024-04-07')}
+              description={`A detailed write-up of the Frida challenge from the Android CTF "Juicy Bar," showcasing reverse engineering techniques using Frida to extract three flags. The post walks through analyzing the APK, understanding decompiled Java code, and crafting custom Frida scripts to hook methods and manipulate application logic.`}
+              onReadMore={() => navigate('/blogs/juicy-bar-meet-frida')}
             />
           </div>
         </div>
